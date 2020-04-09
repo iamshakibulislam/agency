@@ -1,0 +1,12 @@
+{% if messages %}
+
+{% for message in messages %}
+
+{% if message.level=DEFAULT_MESSAGE_LABELS.INFO %}
+<div class="alert alert-info">{{message}}</div>
+{% endif %}
+
+{% endfor %}
+
+
+{% endif %}
