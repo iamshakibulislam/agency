@@ -54,53 +54,6 @@ TABLE OF CONTENT
 /*-----------------------------------------
 1. Sections
 -------------------------------------------*/
-
-/*file input */
-
-.containerss {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  width: 100%;
-  
-}
-
-input[type="file"] {
-  position: absolute;
-  z-index: -1;
-  top: 6px;
-  left: 0px;
-  font-size: 15px;
-  color: rgb(153,153,153);
-}
-
-.button-wrap {
-  position: relative;
-}
-
-.new-button {
-    display: inline-block;
-    padding: 8px 12px; 
-    cursor: pointer;
-    border-radius: 4px;
-    background-color: #9c27b0;
-    font-size: 16px;
-    color: #fff;
-}
-
-
-
-
-/*end of file input */
-
-.custom-text{color:black !important;font-weight: bold}
-
-
-.c{align-items: center !important;}
-.light{color: white !important;margin-right: 7rem !important;}
-.deep{color:black !important;}
-.lead{color:black !important;font-weight: bold !important}
-
 .section-block{
 	padding: 90px 0px 90px 0px;
 	background-color: #fff;
