@@ -25,7 +25,7 @@ SECRET_KEY = 'g*sd%ypaa(+!#=lilg3k9r61ers1z%)(hhv!ar_ok1ggr6-!n@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','localhost','http://webheavenit.com','https://webheavenit.com']
 
 
 # Application definition
