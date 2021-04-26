@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Home</title>
+	<title>webheavenit | Your ultimate web app solution</title>
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" href="{% static 'img/logos/logo-shortcut.png' %}" />	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -85,7 +85,7 @@
 		        	        		        
 		        
 		        </li>		        		        
-		        <li><a href="contact.html" class="btn btn-warning text-white">GET A QUOTE</a></li>
+		        <li><a href="{% url 'get_quote' %}" class="btn btn-warning text-white">GET A QUOTE</a></li>
 		      </ul>
 		      </ul>
 		    </div>	
@@ -489,7 +489,7 @@
 				data-paddingleft="[0,0,0,0]"
 				>
 
-				 Build better business with the best technology and best people
+				 Build better business with the best technology and the best people
 
 				</div>
 

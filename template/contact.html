@@ -1,16 +1,33 @@
 {% extends 'base.html' %}
 
  {% block title %}
-<title>Contact</title>
+<title>Get quote</title>
 {% endblock title %}
 
 
 {% block content %}
 
-
-
+{% load static %}
 
 <!-- Contact START -->
+
+
+
+<!-- Page Title START -->
+<div class="page-title" style="background-image: url({% static 'img/contactimg.jpg' %}); background-position: center;">
+	<div class="container">
+		<h1 style="color:black">Get a free quote</h1>
+		<ul>
+			<li><a href="{% url 'index' %}" style="color:black">Home</a></li>
+			<li><a href="{% url 'get_quote' %}" style="color:black">Get quote</a></li>
+		</ul>
+	</div>
+</div>
+<!-- Page Title END -->
+
+
+
+
 
 
 <div class="section-block-grey">
@@ -18,35 +35,36 @@
 		<div class="section-heading center-holder">
 			<h2>Let's Talk about your business</h2>
 			<div class="heading-line"></div>
-			<p>We would love to hear about your business or new idea. </p>
+			<p>We would love to hear from you about your new business or project ideas </p>
 		</div>			
 		<div>
-			{%if messages ==  1 %}
-
-			<div class="alert alert-danger">Sorry,all fields are required</div>
-			{% elif messages == 2 %}
-
-			<div class="alert alert-success">Thank you,we will get back to you soon</div>
-
-
+			{% if messages %}
+			<div class="alert alert-info">Thank you for your message. We will get back to you soon !</div>
 			{% endif %}
-			<form method="post" action="{% url 'contact_form' %}" class="contact-form">
+			<form method="post" class="contact-form" action="" enctype="multipart/form-data">
 				{% csrf_token %}
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-12">
-						<input type="email" name="emailex" placeholder="E-mail adress">
+						<input type="text" name="fullname" placeholder="Full name" required="true">
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<input type="email" name="email" placeholder="E-mail adress" required="true">
 					</div>
 
 					<div class="col-md-6 col-sm-6 col-xs-12">
-						<input type="text" name="phonex" placeholder="Phone Number">
+						<input type="text" name="phone" placeholder="Phone Number">
 					</div>
 
-					<div class="col-xs-12">
-						<textarea name="messagex" placeholder="Your Message"></textarea>
+					<div class="col-xs-12 col-md-12">
+						<textarea name="message" placeholder="Your project details" cols="11" rows="9"></textarea>
+					</div>
+					<div class="col-md-8">
+						<label>project file - pdf or docx (optional)</label>
+						<input type="file" name="attachment"/>
 					</div>
 
-					<div class="center-holder">
-						<button type="submit" class="button-xs dark-button mt-20 mb-15">Send Message</button>
+					<div class="col-md-8">
+						<button type="submit" class="button-xs dark-button mt-20 mb-15">Get quote now</button>
 					</div>
 				</div>							
 			</form>	
@@ -56,44 +74,14 @@
 <!-- Contact END -->
 
 
-<!-- Map START -->
-<div id="map">
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk25E4mNfVIEt3tNl3K1HwNZVruVoFBlA&callback=initMap">
-	</script>  	
-</div>
-<!-- Map START -->
 
 
 
 <!-- Partners Section START -->
-<div class="partner-section">
-	<div class="container">	
-        <div class="owl-carousel owl-theme partners" id="partners">
-            <div class="item">
-            	<img src="http://via.placeholder.com/216x108" alt="partner-image">  
-            </div>	
 
-            <div class="item">
-            	<img src="http://via.placeholder.com/216x108" alt="partner-image">
-            </div>
+<!-- Partners Section END -->
 
-            <div class="item">
-            	<img src="http://via.placeholder.com/216x108" alt="partner-image">  
-            </div>
 
-            <div class="item">
-            	<img src="http://via.placeholder.com/216x108" alt="partner-image">  
-            </div>
-
-            <div class="item">
-            	<img src="http://via.placeholder.com/216x108" alt="partner-image">  
-            </div>
-
-            <div class="item">
-            	<img src="http://via.placeholder.com/216x108" alt="partner-image"> 
-            </div>            
-        </div>  		     	
-	</div>
-</div>
+<!-- Footer START -->
 <!-- Partners Section END -->
 {% endblock content %}

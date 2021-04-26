@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='index'),
     path('user/',include('user.urls')),
-    path('contact_form/',views.contact_form,name='contact_form')
+    path('get-quote/',views.get_quote,name='get_quote')
 ] 
 
 urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
