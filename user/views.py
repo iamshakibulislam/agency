@@ -3,13 +3,13 @@ from user.models import User
 from django.http import JsonResponse,HttpResponseRedirect
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
-from .forms import project_upload_form
+#from .forms import project_upload_form
 from .models import *
 import urllib
 from django.core.mail import send_mail
 from django.conf import settings
 
-
+'''
 def signup(request):
 	fullname=request.GET['fullname']
 	company=request.GET['company']
@@ -35,7 +35,7 @@ def client_dashboard(request):
 	up_form=project_upload_form()
 	return render(request,'client_dashboard.html',{'up_form':up_form})
 
-
+'''
 def login(request):
 	email=request.GET['email']
 	password=request.GET['password']
@@ -57,7 +57,7 @@ def logout(request):
 	auth.logout(request)
 	return redirect('/')
 
-
+'''
 def project(request):
 	if request.method=='POST':
 		if 'message' in request.session:
@@ -84,7 +84,7 @@ def project(request):
 			up_form=project_upload_form()
 			return redirect('/user/client_dashboard')
 
-
+'''
 
 def send_email_dashboard(request):
 	subject=request.user.full_name+' email: '+request.user.email
