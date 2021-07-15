@@ -118,18 +118,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 # development staticfiles setting
-
+'''
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'staticfiles')]
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
-
+'''
 
 
 #production staticfiles setting
-'''
+
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/webheagf/public_html/static/'
@@ -139,7 +139,6 @@ MEDIA_ROOT = '/home/webheagf/public_html/media/'
 MEDIA_URL = '/media/'
 
 
-'''
 
 
 AUTH_USER_MODEL='user.User'
