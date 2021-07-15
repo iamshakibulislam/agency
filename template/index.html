@@ -494,7 +494,7 @@
 				</div>
 
 			<!-- LAYER NR. 17 -->
-			<a class="revolution-btn button-md primary-button tp-caption rev-btn  tp-resizeme" href="#"  id="slide-67-layer-7" 
+			<a class="revolution-btn button-md primary-button tp-caption rev-btn  tp-resizeme" href="{% url 'get_quote' %}"  id="slide-67-layer-7" 
 				 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
 				 data-y="['middle','middle','middle','middle']" data-voffset="['200','200','160','120']" 
 				data-width="250"
@@ -900,7 +900,7 @@
 				>leverage the power of modern web technologies and machine learning data analysis </div>
 
 			<!-- LAYER NR. 34 -->
-			<a class="revolution-btn button-md primary-button tp-caption revolution-btn tp-resizeme" href="#" id="slide-66-layer-7" 
+			<a class="revolution-btn button-md primary-button tp-caption revolution-btn tp-resizeme" href="{% url 'get_quote' %}" id="slide-66-layer-7" 
 				 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
 				 data-y="['middle','middle','middle','middle']" data-voffset="['200','200','160','120']" 
 				data-width="250"
@@ -1095,7 +1095,7 @@ We help you to maximize your revenue and reach your true potential with web tech
 			<h4 style="color: #fff;">We’d love to hear from you to discuss web design, product development or <br>to hear your new startup idea.</h4>
 		</div>
 		<div class="center-holder mt-30">
-			<a href="#" class="dark-button button-md">Let us know</a>
+			<a href="{% url 'get_quote' %}" class="dark-button button-md">Let us know</a>
 		</div>
 	</div>
 </div>
@@ -1280,6 +1280,53 @@ We help you to maximize your revenue and reach your true potential with web tech
 	    	
 	    <div class="row">
 			<div class="isotope-grid">
+
+				<!-- first row of portfoliios -->
+				 <div class="col-md-4 col-sm-6 col-xs-12 isotope-item marketing">
+		          <a href="#">
+		            <div class="project-item">
+		              <div class="overlay-container">
+		                <img src="{% static 'img/portfolio4.png' %}" alt="project-1">
+		                <div class="project-item-overlay">
+		                  <h4>Multi branch saloon app</h4>
+		                  <p>Complete Saloon Management with multi branch</p>
+		                </div>              
+		              </div>              
+		            </div>  
+		          </a>        
+		        </div>	
+
+		        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item business">
+		          <a href="#">
+		            <div class="project-item">
+		              <div class="overlay-container">
+		                <img src="{% static 'img/portfolio5.png' %}" alt="project-1">
+		                <div class="project-item-overlay">
+		                  <h4>Opensource Preprint Server</h4>
+		                  <p>Opensource preprint publishing plarform</p>
+		                </div>              
+		              </div>              
+		            </div>  
+		          </a>        
+		        </div>
+
+		        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item business">
+		          <a href="#">
+		            <div class="project-item">
+		              <div class="overlay-container">
+		                <img src="{% static 'img/portfolio6.png' %}" alt="project-1">
+		                <div class="project-item-overlay">
+		                  <h4>Complete Bakery Management</h4>
+		                  <p>Bakery management software</p>
+		                </div>              
+		              </div>              
+		            </div>  
+		          </a>        
+		        </div>		
+		             	
+
+
+				<!-- end of first row of portfolios -->
 		        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item business marketing">
 		          <a href="#">
 		            <div class="project-item">
@@ -1287,7 +1334,7 @@ We help you to maximize your revenue and reach your true potential with web tech
 		                <img src="{% static 'img/portfolio1.png' %}" alt="project-1">
 		                <div class="project-item-overlay">
 		                  <h4>coaching project</h4>
-		                  <p>Online live one on one coaching with paypent integration</p>
+		                  <p>Online live one on one coaching</p>
 		                </div>              
 		              </div>              
 		            </div>  
@@ -1300,8 +1347,8 @@ We help you to maximize your revenue and reach your true potential with web tech
 		              <div class="overlay-container">
 		                <img src="{% static 'img/portfolio3.png' %}" alt="project-1">
 		                <div class="project-item-overlay">
-		                  <h4>crowd investment management software  </h4>
-		                  <p> crowd money making website with local currency payment </p>
+		                  <h4>crowd investment management</h4>
+		                  <p> crowd investment management software </p>
 		                </div>              
 		              </div>              
 		            </div>  
@@ -1322,49 +1369,10 @@ We help you to maximize your revenue and reach your true potential with web tech
 		            </div>  
 		          </a>        
 		        </div>
-		        <!--
-		        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item marketing">
-		          <a href="#">
-		            <div class="project-item">
-		              <div class="overlay-container">
-		                <img src="http://via.placeholder.com/360x250" alt="project-1">
-		                <div class="project-item-overlay">
-		                  <h4>Project 1</h4>
-		                  <p>Lorem ipsum dolor sit amet</p>
-		                </div>              
-		              </div>              
-		            </div>  
-		          </a>        
-		        </div>	
+		   
 
-		        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item business">
-		          <a href="#">
-		            <div class="project-item">
-		              <div class="overlay-container">
-		                <img src="http://via.placeholder.com/360x250" alt="project-1">
-		                <div class="project-item-overlay">
-		                  <h4>Project 1</h4>
-		                  <p>Lorem ipsum dolor sit amet</p>
-		                </div>              
-		              </div>              
-		            </div>  
-		          </a>        
-		        </div>
 
-		        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item business">
-		          <a href="#">
-		            <div class="project-item">
-		              <div class="overlay-container">
-		                <img src="http://via.placeholder.com/360x250" alt="project-1">
-		                <div class="project-item-overlay">
-		                  <h4>Project 1</h4>
-		                  <p>Lorem ipsum dolor sit amet</p>
-		                </div>              
-		              </div>              
-		            </div>  
-		          </a>        
-		        </div>		
-		        -->        			        	        		        
+		       		        	        		        
         
 			</div>
 		</div>	
