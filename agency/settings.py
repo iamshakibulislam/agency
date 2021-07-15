@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'g*sd%ypaa(+!#=lilg3k9r61ers1z%)(hhv!ar_ok1ggr6-!n@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','http://webheavenit.com','https://webheavenit.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','webheavenit.com']
 
 
 # Application definition
